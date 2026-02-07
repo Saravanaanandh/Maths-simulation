@@ -44,7 +44,7 @@ export function SimulationLayout({
                                 <span className="text-xl font-black text-indigo-600 font-mono">{score}</span>
                             </div>
                             {(highScore !== undefined) && (
-                                <div className="bg-yellow-50 px-4 py-2 rounded-xl flex flex-col items-center border-2 border-yellow-100 hidden sm:flex">
+                                <div className="bg-yellow-50 px-4 py-2 rounded-xl flex-col items-center border-2 border-yellow-100 hidden sm:flex">
                                     <span className="text-xs font-bold text-yellow-500 uppercase tracking-wider">Best</span>
                                     <span className="text-xl font-black text-yellow-600 font-mono">{highScore}</span>
                                 </div>
