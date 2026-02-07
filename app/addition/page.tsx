@@ -236,8 +236,7 @@ export default function AdditionLesson() {
 
         {/* Footer */}
         <div className="pt-8 border-t border-slate-200 text-center pb-8">
-          <p className="text-sm text-slate-600">
-            Made with <span className="font-semibold">Visily</span>
+          <p className="text-sm text-slate-600"> 
           </p>
         </div>
       </div>

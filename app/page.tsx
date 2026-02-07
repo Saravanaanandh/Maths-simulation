@@ -1,80 +1,175 @@
 'use client'
 
-import React from "react"
-import Link from 'next/link'
+import Link from "next/link"
+import {
+  Plus,
+  Minus,
+  X,
+  Divide,
+  Square,
+  Circle,
+  RectangleHorizontal,
+  Triangle, 
+  Box,
+  Cuboid,
+  Globe,
+  Cone,
+} from "lucide-react"
 
-export default function LandingPage() {
-  const modules = [
+export default function EduKidMath() {
+  const simulations = [
     {
       title: "Addition",
-      description: "Learn what addition is, why it is used, and how to find totals.",
+      desc: "Visualize addition using objects and number lines.",
       link: "/addition",
-      icon: "+",
-      color: "bg-blue-50 border-blue-200 text-blue-600 hover:border-blue-300"
+      icon: Plus,
     },
     {
       title: "Subtraction",
-      description: "Learn how subtraction helps find the difference between numbers.",
+      desc: "Understand subtraction by removing quantities.",
       link: "/subtraction",
-      icon: "-",
-      color: "bg-red-50 border-red-200 text-red-600 hover:border-red-300"
+      icon: Minus,
     },
     {
       title: "Multiplication",
-      description: "Learn multiplication as repeated addition.",
+      desc: "Learn multiplication as repeated addition.",
       link: "/multiplication",
-      icon: "×",
-      color: "bg-green-50 border-green-200 text-green-600 hover:border-green-300"
+      icon: X,
     },
     {
       title: "Division",
-      description: "Learn how to split numbers into equal parts.",
+      desc: "Divide numbers into equal parts step by step.",
       link: "/division",
-      icon: "÷",
-      color: "bg-purple-50 border-purple-200 text-purple-600 hover:border-purple-300"
+      icon: Divide,
+    },
+    {
+      title: "Square – Area & Perimeter",
+      desc: "Explore square measurements interactively.",
+      link: "/square",
+      icon: Square,
+    },
+    {
+      title: "Circle – Area & Circumference",
+      desc: "Understand circle formulas visually.",
+      link: "/circle",
+      icon: Circle,
+    },
+    {
+      title: "Rectangle – Area & Perimeter",
+      desc: "Calculate rectangle dimensions clearly.",
+      link: "/rectangle",
+      icon: RectangleHorizontal,
+    },
+    {
+      title: "Triangle – Basics",
+      desc: "Learn triangle area and perimeter concepts.",
+      link: "/triangle",
+      icon: Triangle,
+    },
+    {
+      title: "Cube - Volume & Surface Area",
+      desc: "Calculate volume and surface area in 3D.",
+      link: "/cube",
+      icon: Box,
+    },
+    {
+      title: "Cuboid - Volume & Surface Area",
+      desc: "Calculate volume and surface area of rectangular prisms in 3D.",
+      link: "/cuboid",
+      icon: Cuboid, // You can use the same Box icon or create/import a Cuboid icon
+    },
+    {
+      title: "Sphere - Volume & Surface Area",
+      desc: "Calculate volume and surface area of perfect spheres in 3D.",
+      link: "/sphere",
+      icon: Globe, // Lucide-react Circle icon works well for sphere
+    },
+    {
+      title: "Cone - Volume & Surface Area",
+      desc: "Calculate volume and surface area of 3D cones with circular bases.",
+      link: "/cone",
+      icon: Cone, // If you have a Cone icon available
     }
   ]
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#f2f2f2]">
+
       {/* Header */}
-      <div className="sticky top-0 z-50 bg-white border-b border-slate-200">
-        <div className="max-w-4xl mx-auto px-4 py-4">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold text-slate-900">Mathematics Study App</h1>
-            <p className="text-sm text-slate-500">Choose a topic to start learning</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {modules.map((module) => (
-            <Link
-              key={module.title}
-              href={module.link}
-              className={`block group relative overflow-hidden rounded-xl border-2 p-8 transition-all hover:shadow-md ${module.color}`}
-            >
-              <div className="relative z-10 flex flex-col h-full">
-                <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-2xl font-bold">{module.title}</h2>
-                  <span className="text-4xl font-bold opacity-50">{module.icon}</span>
-                </div>
-                <p className="text-slate-600 font-medium leading-relaxed">
-                  {module.description}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        {/* Footer */}
-        <div className="mt-12 pt-8 border-t border-slate-200 text-center">
-          <p className="text-sm text-slate-600">
+      <header className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-6 py-5">
+          <h1 className="text-2xl font-semibold text-slate-900">
+            EduKid
+          </h1>
+          <p className="text-sm text-slate-500">
+            Interactive Math Simulations
           </p>
         </div>
-      </div>
+      </header>
+
+      {/* Navigation */}
+      <nav className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex gap-8 text-sm">
+          <span className="font-medium text-blue-600">Mathematics Simulations</span>
+          <span className="text-slate-600">Math Playground</span> 
+        </div>
+      </nav>
+
+      {/* Section Title */}
+      <section className="bg-[#eaeaea]">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <h2 className="text-xl font-semibold text-slate-800">
+            Mathematics Simulations
+          </h2>
+        </div>
+      </section>
+
+      {/* Simulation Grid */}
+      <main className="max-w-7xl mx-auto px-6 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {simulations.map((sim) => {
+            const Icon = sim.icon
+            return (
+              <Link key={sim.title} href={sim.link}>
+                <div className="
+                  bg-white border rounded-md
+                  hover:shadow-lg transition
+                  h-full flex flex-col
+                ">
+                  {/* Preview */}
+                  <div className="
+                    h-32 border-b bg-[#fafafa]
+                    flex items-center justify-center
+                  ">
+                    <Icon className="w-10 h-10 text-slate-500" />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-4 flex flex-col flex-1">
+                    <h3 className="font-semibold text-slate-800 mb-2">
+                      {sim.title}
+                    </h3>
+                    <p className="text-sm text-slate-600 flex-1">
+                      {sim.desc}
+                    </p>
+                    <span className="mt-4 text-sm text-blue-600 font-medium">
+                      Open Simulation →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            )
+          })}
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-6 text-sm text-slate-500">
+          © EduKid – Math Learning Platform
+        </div>
+      </footer>
+
     </div>
   )
 }

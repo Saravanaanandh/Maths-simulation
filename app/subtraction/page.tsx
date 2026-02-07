@@ -74,10 +74,10 @@ export default function SubtractionLesson() {
                 <section className="mb-12">
                     <h2 className="text-xl font-bold text-slate-900 mb-4">Concept Explanation</h2>
                     <p className="text-slate-700 leading-relaxed mb-2">
-                        Subtraction means finding the difference when one quantity is taken away from another.
+                        Addition means combining two or more quantities to find their total value.
                     </p>
                     <p className="text-slate-700 leading-relaxed">
-                        We use subtraction in daily life to remove, compare, and find how many are left.
+                        We use addition in daily life to count objects, calculate totals, and increase values.
                     </p>
                 </section>
 
@@ -208,11 +208,33 @@ export default function SubtractionLesson() {
                         Reset Simulation
                     </Button>
                 </section>
+                {/* Educational Explanation */}
+                <section className="space-y-6 mb-12">
+                <div className="bg-white rounded-lg border border-slate-300 p-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-3">What is Subtraction?</h3>
+                    <p className="text-slate-700 leading-relaxed">
+                    Subtraction is a basic mathematical operation used to find the difference between two quantities. It helps us determine how much is left after taking away some amount, or how much one number is smaller than another. Subtraction is the opposite of addition.
+                    </p>
+                </div>
+
+                <div className="bg-white rounded-lg border border-slate-300 p-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-3">Why do we use Subtraction?</h3>
+                    <p className="text-slate-700 leading-relaxed">
+                    We use subtraction in daily life to calculate change, measure differences, find remaining quantities, and solve real-life problems. Whether you're calculating how much money you have left after shopping, determining how many cookies remain after eating some, or finding out how much time is left in a game, subtraction is an essential skill.
+                    </p>
+                </div>
+
+                <div className="bg-white rounded-lg border border-slate-300 p-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-3">Real-Life Examples</h3>
+                    <p className="text-slate-700 leading-relaxed">
+                    If you have 10 apples and give away 3 apples, subtraction helps you know that you have 7 apples left. Similarly, if you have 15 rupees and spend 8 rupees, subtraction helps you find that you have 7 rupees remaining. These everyday examples show how subtraction is used in our daily activities.
+                    </p>
+                </div>
+                </section>
 
                 {/* Footer */}
                 <div className="pt-8 border-t border-slate-200 text-center pb-8">
-                    <p className="text-sm text-slate-600">
-                        Made with <span className="font-semibold">Visily</span>
+                    <p className="text-sm text-slate-600"> 
                     </p>
                 </div>
             </div>

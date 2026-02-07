@@ -45,8 +45,8 @@ export default function DivisionLesson() {
   }
 
   const reset = () => {
-    setTotalItems(12)
-    setNumberOfGroups(3)
+    setTotalItems(1)
+    setNumberOfGroups(1)
   }
 
   // Calculate distribution for visualization
@@ -106,12 +106,12 @@ export default function DivisionLesson() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                 {/* Total Apples */}
                 <div className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-slate-900 mb-2">12 apples</span>
-                  <div className="flex gap-1 flex-wrap justify-center max-w-32">
+                <span className="text-2xl font-bold text-slate-900 mb-2">12 apples</span>
+                <div className="grid grid-cols-3 gap-1">
                     {Array.from({ length: 12 }).map((_, i) => (
-                      <span key={i} className="text-3xl">🍎</span>
+                    <span key={i} className="text-2xl">🍎</span>
                     ))}
-                  </div>
+                </div>
                 </div>
 
                 <div className="flex flex-col items-center">
@@ -265,6 +265,7 @@ export default function DivisionLesson() {
                       )}
                     </div>
                   </div>
+                  
                 ))}
               </div>
             </div>
@@ -435,8 +436,7 @@ export default function DivisionLesson() {
 
         {/* Footer */}
         <div className="pt-8 border-t border-slate-200 text-center pb-8">
-          <p className="text-sm text-slate-600">
-            Made with <span className="font-semibold">Visily</span>
+          <p className="text-sm text-slate-600"> 
           </p>
         </div>
       </div>
