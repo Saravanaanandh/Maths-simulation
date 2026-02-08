@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Edukids",
   description: "Created for students", 
   icons: {
-    icon: "/edukids.png",
+    icon: "./favicon.ico",
   },
 };
 
