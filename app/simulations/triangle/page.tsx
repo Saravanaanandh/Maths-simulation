@@ -79,7 +79,7 @@ export default function TriangleLesson() {
         <section className="mb-12">
           <h2 className="text-xl font-bold text-slate-900 mb-6">Example Calculation</h2>
           <div className="bg-white rounded-lg border border-slate-300 p-6">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="flex flex-col md:flex-row items-center md:justify-around justify-center gap-8">
               {/* Visual Triangle - Static example */}
               <div className="flex flex-col items-center">
                 <div className="relative">
@@ -99,18 +99,18 @@ export default function TriangleLesson() {
                       }}
                     >
                       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                        <div className={`${exampleTextSize} font-bold text-blue-600`}>
+                        <div className={`${exampleTextSize} font-bold text-blue-600 text-nowrap mb-6`}>
                           {exampleBase} × {exampleHeight}
                         </div>
                       </div>
                     </div>
                   </div>
                   {/* Base label */}
-                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm text-blue-600 font-medium">
+                  <div className="absolute -bottom-6 left-1/2 md:text-nowrap transform -translate-x-1/2 text-sm text-blue-600 font-medium">
                     Base = {exampleBase} units
                   </div>
                   {/* Height label */}
-                  <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm text-blue-600 font-medium">
+                  <div className="absolute -right-14 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm text-blue-600 font-medium">
                     Height = {exampleHeight} units
                   </div>
                 </div>
@@ -255,7 +255,7 @@ export default function TriangleLesson() {
                   >
                     {/* Text inside triangle */}
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                      <div className={`${getTextSize()} font-bold text-blue-600`}>
+                      <div className={`${getTextSize()} font-bold text-blue-600 text-nowrap mb-6`}>
                         {base} × {height}
                       </div>
                     </div>

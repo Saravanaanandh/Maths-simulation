@@ -11,7 +11,7 @@ export function Navbar() {
     const navItems = [
         { name: "Home", href: "/" },
         { name: "Games", href: "/games" },
-        { name: "Lessons", href: "/simulations" },
+        { name: "Simulations", href: "/simulations" },
         { name: "About", href: "/#about" },
     ];
 

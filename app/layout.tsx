@@ -8,9 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Math Simulation",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Edukids",
+  description: "Created for students", 
+  icons: {
+    icon: "/edukids.png",
+  },
 };
 
 export default function RootLayout({
