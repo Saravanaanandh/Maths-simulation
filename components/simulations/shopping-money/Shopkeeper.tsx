@@ -10,7 +10,7 @@ export const Shopkeeper: React.FC<ShopkeeperProps> = ({ mood, message }) => {
         <div className="flex flex-col items-center relative">
             {/* Speech Bubble */}
             {message && (
-                <div className="absolute -top-16 md:-top-24 left-30 bg-white px-4 md:px-6 py-2 md:py-4 rounded-3xl rounded-bl-none shadow-lg border-2 border-slate-200 animate-in fade-in zoom-in duration-300 max-w-[200px] md:max-w-md text-center z-20">
+                <div className="absolute -top-16 md:-top-24 left-40 bg-white px-4 md:px-6 py-2 md:py-4 rounded-3xl rounded-bl-none shadow-lg border-2 border-slate-200 animate-in fade-in zoom-in duration-300 max-w-[200px] md:max-w-md text-center z-20">
                     <p className="text-sm md:text-lg font-medium text-slate-700">{message}</p>
                 </div>
             )}

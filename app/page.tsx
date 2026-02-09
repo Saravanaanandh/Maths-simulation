@@ -98,8 +98,8 @@ export default function EduKidMath() {
                   </Button>
                 </Link>
                 <Link href="/simulations">
-                  <Button size="xl" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white/20 font-bold text-lg h-16 px-8 rounded-2xl">
-                    <BookOpen className="mr-2 w-6 h-6" /> Visual Lessons
+                  <Button size="xl" variant="outline" className="bg-transparent border-2 border-[#5544e5] text-[#5544e5] hover:bg-white/20 font-bold text-lg h-16 px-8 rounded-2xl">
+                    <BookOpen className="mr-2 w-6 h-6" /> Math Simulations
                   </Button>
                 </Link>
               </motion.div>

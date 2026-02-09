@@ -25,7 +25,7 @@ export function Navbar() {
                                 <Gamepad2 className="w-8 h-8 text-white" />
                             </div>
                             <span className="font-outfit font-bold text-2xl text-blue-600 tracking-tight">
-                                Math<span className="text-yellow-500">Playground</span>
+                                EduKid<span className="text-yellow-500">Math</span>
                             </span>
                         </Link>
                     </div>
